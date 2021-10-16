@@ -6,9 +6,6 @@ export const costomTheme = extendTheme({
     global: {
       "html, body": {
         margin: 0,
-        FontFace: {
-          fontFamily: "Noto Sans KR",
-        },
       },
     },
   },
