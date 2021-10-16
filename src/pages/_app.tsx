@@ -1,11 +1,20 @@
 import "tailwindcss/tailwind.css";
-import { ChakraProvider } from "@chakra-ui/react"
-import { costomTheme } from "../theme"
+import Head from "next/head";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
+import { costomTheme } from "../theme";
 
-function MyApp({ Component, pageProps }) {
+import { AppProps } from "next/dist/shared/lib/router/router";
+import Layout from "../Layout.tsx/Layout";
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={costomTheme}>
-      <Component {...pageProps} />
+      <Head>
+        <title>My Protforio</title>
+      </Head>
+      
+        <Component {...pageProps} />
+      
     </ChakraProvider>
   );
 }
