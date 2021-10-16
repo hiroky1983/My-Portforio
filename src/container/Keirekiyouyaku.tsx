@@ -9,6 +9,8 @@ const Keirekiyouyaku = () => {
         display="block"
         borderBottom="2px solid"
         borderColor="gray"
+        fontSize="2xl"
+        mb="2"
       >
         経歴要約
       </Heading>

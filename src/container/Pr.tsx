@@ -9,6 +9,8 @@ const Pr = () => {
         display="block"
         borderBottom="2px solid"
         borderColor="gray"
+        my="6"
+        fontSize="2xl"
       >
         自己ＰＲ
       </Heading>
