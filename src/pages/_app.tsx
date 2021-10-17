@@ -10,11 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={costomTheme}>
       <Head>
-        <title>My Protforio</title>
+        <title>My Protfolio</title>
       </Head>
-      
-        <Component {...pageProps} />
-      
+
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }

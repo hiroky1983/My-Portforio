@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   return (
     <Box>
-      <Box display={{ base: "block", xl: "none" }} zIndex={5} pos="fixed">
+      {/* <Box display={{ base: "block", xl: "none" }} zIndex={5} pos="fixed">
         <Button
           ref={btnRef}
           onClick={onOpen}
@@ -39,7 +39,7 @@ const Sidebar = () => {
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Box>
+      </Box> */}
 
       <Box display={{ base: "none", xl: "block" }}>
         <Flex
@@ -66,6 +66,31 @@ const Sidebar = () => {
                 </Link>
               </Box>
             </Stack>
+
+            <Stack isInline spacing={4}>
+              <Box mx="auto" mb="4">
+                <Link
+                  href="/sns"
+                  display="block"
+                  fontSize="xl"
+                  fontWeight="bold"
+                >
+                  SNS
+                </Link>
+              </Box>
+            </Stack>
+            <Stack isInline spacing={4}>
+              <Box mx="auto" mb="4">
+                <Link
+                  href="/portfolio"
+                  display="block"
+                  fontSize="xl"
+                  fontWeight="bold"
+                >
+                  ポートフォリオ
+                </Link>
+              </Box>
+            </Stack>
             <Stack isInline spacing={4}>
               <Box mx="auto" mb="4">
                 <Link
@@ -75,20 +100,6 @@ const Sidebar = () => {
                   fontWeight="bold"
                 >
                   職務経歴書
-                </Link>
-              </Box>
-            </Stack>
-            <Stack isInline spacing={4}>
-              <Box mx="auto" mb="4">
-                <Link href="/" display="block" fontSize="xl" fontWeight="bold">
-                  SNS
-                </Link>
-              </Box>
-            </Stack>
-            <Stack isInline spacing={4}>
-              <Box mx="auto" mb="4">
-                <Link href="/" display="block" fontSize="xl" fontWeight="bold">
-                  ポートフォリオ
                 </Link>
               </Box>
             </Stack>
