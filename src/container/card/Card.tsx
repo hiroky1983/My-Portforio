@@ -26,7 +26,7 @@ const Card = () => {
         <Heading as="h2">Profile</Heading>
         <Flex>
           <Text mt="4">
-            日本マクドナルド株式会社　→　現在エンジニア転職目指して学習中
+            日本マクドナルド株式会社 → 現在エンジニア転職目指して学習中
             <br />
             2020年11月からReact、TypeScript、Next.jsなどフロントエンドの学習を主に行っています。
             <br />
