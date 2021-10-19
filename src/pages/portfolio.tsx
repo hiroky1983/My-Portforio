@@ -1,6 +1,5 @@
 import { Box, Heading, Stack } from "@chakra-ui/layout";
 import { VFC } from "react";
-import Card from "../container/card/Card";
 import PortfolioCard from "../container/card/PortfolioCard";
 import Layout from "../Layout.tsx/Layout";
 
@@ -8,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const portfolio: VFC<Props> = (props) => {
+const portfolio: VFC<Props> = () => {
   return (
     <>
       <Layout>

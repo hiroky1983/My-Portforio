@@ -1,6 +1,5 @@
 import { Box, Heading, Stack } from "@chakra-ui/layout";
 import { VFC } from "react";
-import Card from "../container/card/Card";
 import SnsCard from "../container/card/SnsCard";
 import Layout from "../Layout.tsx/Layout";
 

@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Text,
-} from "@chakra-ui/layout";
+import { Center, Grid, GridItem, Heading, Text } from "@chakra-ui/layout";
 import { getToday } from "../../utils/today";
 import Keirekiyouyaku from "../container/Keirekiyouyaku";
 import Pr from "../container/Pr";

@@ -1,7 +1,6 @@
 import React from "react";
-import { Flex, DrawerCloseButton, Stack, Box, Link } from "@chakra-ui/react";
-import Image from "next/image";
-import { Heading, Spacer } from "@chakra-ui/react";
+import { Flex, DrawerCloseButton, Stack } from "@chakra-ui/react";
+import {  Spacer } from "@chakra-ui/react";
 
 export const SpSidebar = () => {
   return (

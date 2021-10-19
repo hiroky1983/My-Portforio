@@ -4,7 +4,6 @@ import Card from "../container/card/Card";
 import PortfolioCard from "../container/card/PortfolioCard";
 import SnsCard from "../container/card/SnsCard";
 import Layout from "../Layout.tsx/Layout";
-import portfolio from "./portfolio";
 
 type Props = {
   children: React.ReactNode;

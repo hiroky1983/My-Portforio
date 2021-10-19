@@ -1,11 +1,8 @@
 import React from "react";
 import {
   Box,
-  Center,
   Flex,
-  Heading,
   Link,
-  Stack,
   Text,
 } from "@chakra-ui/layout";
 import { FaGithub, FaTwitterSquare } from "react-icons/fa";
