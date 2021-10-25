@@ -13,11 +13,11 @@ import { SpSidebar } from "./SpSidebar";
 
 const Sidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
+  const btnRef = useRef<any>();
 
   return (
     <Box>
-      {/* <Box display={{ base: "block", xl: "none" }} zIndex={5} pos="fixed">
+      <Box display={{ base: "block", xl: "none" }} zIndex={5} pos="fixed">
         <Button
           ref={btnRef}
           onClick={onOpen}
@@ -39,7 +39,7 @@ const Sidebar = () => {
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Box> */}
+      </Box>
 
       <Box display={{ base: "none", xl: "block" }}>
         <Flex
