@@ -1,5 +1,6 @@
 import { Box, Heading, Stack } from "@chakra-ui/layout";
 import { VFC } from "react";
+import useSWR from "swr";
 import Card from "../container/card/Card";
 import PortfolioCard from "../container/card/PortfolioCard";
 import SnsCard from "../container/card/SnsCard";
@@ -9,7 +10,13 @@ type Props = {
   children: React.ReactNode;
 };
 
+// const fetcher = async () =>
+  // await fetch("http://localhost:3000/api/hello").then((res) => res.json());
+
 const Home: VFC<Props> = () => {
+  // const { data, error } = useSWR("api/hello", fetcher);
+  // console.log(data);
+
   return (
     <>
       <Layout>
@@ -24,31 +31,6 @@ const Home: VFC<Props> = () => {
             >
               Home
             </Heading>
-            <Card />
-          </Stack>
-          <Stack spacing={8} mt="12">
-            <Heading
-              as="h1"
-              textAlign="center"
-              borderBottom="5px solid"
-              borderColor="teal"
-              mx="auto"
-            >
-              Portfolio
-            </Heading>
-            <PortfolioCard />
-          </Stack>
-          <Stack spacing={8} mt="12">
-            <Heading
-              as="h1"
-              textAlign="center"
-              borderBottom="5px solid"
-              borderColor="teal"
-              mx="auto"
-            >
-              SNS
-            </Heading>
-            <SnsCard />
           </Stack>
         </Box>
       </Layout>

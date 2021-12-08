@@ -11,6 +11,9 @@ import {
 import React from "react";
 
 const Card = () => {
+  const url = "https://github.com/users/hiroky1983/contributions";
+  
+
   return (
     <Center p="2">
       <Box

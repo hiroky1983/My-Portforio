@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
-import { Box, Flex, Link, Spacer, Stack } from "@chakra-ui/layout";
+import { Box, Flex, Stack } from "@chakra-ui/layout";
+import Link from "next/link";
 import {
   Drawer,
   DrawerBody,
@@ -58,49 +59,28 @@ const Sidebar = () => {
             pb="4"
             overflowY="auto"
             px="4"
+            fontSize="xl"
+            fontWeight="bold"
           >
             <Stack isInline spacing={8}>
               <Box mx="auto" mt="8" mb="4">
-                <Link href="/" fontSize="xl" fontWeight="bold" display="block">
-                  HOME
-                </Link>
+                <Link href="/">HOME</Link>
               </Box>
             </Stack>
 
             <Stack isInline spacing={4}>
               <Box mx="auto" mb="4">
-                <Link
-                  href="/sns"
-                  display="block"
-                  fontSize="xl"
-                  fontWeight="bold"
-                >
-                  SNS
-                </Link>
+                <Link href="/profile">PROFILE</Link>
               </Box>
             </Stack>
-            <Stack isInline spacing={4}>
+            {/* <Stack isInline spacing={4}>
               <Box mx="auto" mb="4">
-                <Link
-                  href="/portfolio"
-                  display="block"
-                  fontSize="xl"
-                  fontWeight="bold"
-                >
-                  ポートフォリオ
-                </Link>
+                <Link href="/portfolio">ポートフォリオ</Link>
               </Box>
-            </Stack>
+            </Stack>  */}
             <Stack isInline spacing={4}>
               <Box mx="auto" mb="4">
-                <Link
-                  href="/keireki"
-                  display="block"
-                  fontSize="xl"
-                  fontWeight="bold"
-                >
-                  職務経歴書
-                </Link>
+                <Link href="/keireki">職務経歴書</Link>
               </Box>
             </Stack>
           </Flex>
