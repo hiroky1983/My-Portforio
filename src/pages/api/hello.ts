@@ -12,7 +12,7 @@ export default async function helloAPI(
   const a = await octokit.request(
     "GET /repos/{owner}/{repo}/git/commits/{commit_sha}",
     {
-      owner: "octocat",
+      owner: "hiroky1983",
       repo: "hello-world",
       commit_sha: "commit_sha",
     }
