@@ -4,7 +4,6 @@ import { ChakraProvider, Flex } from "@chakra-ui/react";
 import { costomTheme } from "../theme";
 
 import { AppProps } from "next/dist/shared/lib/router/router";
-import Layout from "../Layout.tsx/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
