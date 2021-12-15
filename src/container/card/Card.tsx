@@ -32,7 +32,7 @@ const Card = () => {
             <br />
             2020年11月からReact、TypeScript、Next.jsなどフロントエンドの学習を主に行っています。
             <br />
-            2021年10月からRubyの学習はじめました。
+            
             <br />
           </Text>
           <Spacer />
