@@ -1,6 +1,6 @@
 import { Box, Heading, Stack } from "@chakra-ui/layout";
 import { VFC } from "react";
-import Layout from "../Layout.tsx/Layout";
+import Layout from "../Layout/Layout";
 
 type Props = {
   children: React.ReactNode;
