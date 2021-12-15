@@ -1,6 +1,7 @@
 import { Box, Heading, Stack } from "@chakra-ui/layout";
 import { VFC } from "react";
 import useSWR from "swr";
+import { bietNewSkills, memberChoosedSkills } from "../../utils/skills";
 import Card from "../container/card/Card";
 import PortfolioCard from "../container/card/PortfolioCard";
 import SnsCard from "../container/card/SnsCard";
@@ -46,12 +47,14 @@ const profile = () => {
               description="外国人と日本人の交際に関する情報サイトです（製作中）"
               link="https://github.com/hiroky1983/biet_new"
               githubLink=""
+              skills={bietNewSkills}
             />
             <PortfolioCard
               title="Member-Choosed"
               description="学習サイトで一緒に学習する人を選ぶ為に作ったメンバー選定アプリ,制作時間30分で初めて他人にも使ってもらったアプリです"
               link="https://member-choosed-hiroky1983.vercel.app/"
               githubLink="https://github.com/hiroky1983/Member-Choosed"
+              skills={memberChoosedSkills}
             />
           </Stack>
           <Stack spacing={8} mt="12">

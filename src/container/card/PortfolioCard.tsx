@@ -9,17 +9,20 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import { FaGithub } from "react-icons/fa";
+import { MdCheckCircle } from "react-icons/md";
 import React, { VFC } from "react";
+import { List, ListItem, ListIcon } from "@chakra-ui/react";
 
 type Props = {
   title: string;
   description: string;
   link: string;
   githubLink: string;
+  skills: { id: number; name: string }[];
 };
 
 const PortfolioCard: VFC<Props> = (props) => {
-  const { title, description, link, githubLink } = props;
+  const { title, description, link, githubLink, skills } = props;
   return (
     <Center p="2">
       <Box
@@ -41,6 +44,17 @@ const PortfolioCard: VFC<Props> = (props) => {
             <Icon as={FaGithub} w="6" h="6" />
           </Link>
         </Flex>
+        <Text my="2" fontWeight="bold">
+          使用技術
+        </Text>
+        {skills.map((skill) => (
+          <List spacing={3}>
+            <ListItem>
+              <ListIcon key={skill.id} as={MdCheckCircle} color="teal" />
+              {skill.name}
+            </ListItem>
+          </List>
+        ))}
       </Box>
     </Center>
   );
