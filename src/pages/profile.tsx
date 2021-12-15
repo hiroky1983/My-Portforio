@@ -11,7 +11,7 @@ import {
 import Card from "../container/card/Card";
 import PortfolioCard from "../container/card/PortfolioCard";
 import SnsCard from "../container/card/SnsCard";
-import Layout from "../Layout.tsx/Layout";
+import Layout from "../Layout/Layout";
 
 const fetcher = async (url: any) => {
   await fetch(url).then((res) => res.json());

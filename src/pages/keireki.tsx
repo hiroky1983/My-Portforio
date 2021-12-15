@@ -3,7 +3,7 @@ import { getToday } from "../../utils/today";
 import Keirekiyouyaku from "../container/Keirekiyouyaku";
 import Pr from "../container/Pr";
 import Shokumukeireki from "../container/Shokumukeireki";
-import Layout from "../Layout.tsx/Layout";
+import Layout from "../Layout/Layout";
 
 const keireki = () => {
   const date = getToday();
