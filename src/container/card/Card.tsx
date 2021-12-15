@@ -8,11 +8,12 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/layout";
+import { Th } from "@chakra-ui/react";
 import React from "react";
+import { SkillTable } from "../Skilltable";
 
 const Card = () => {
   const url = "https://github.com/users/hiroky1983/contributions";
-  
 
   return (
     <Center p="2">
@@ -32,12 +33,15 @@ const Card = () => {
             <br />
             2020年11月からReact、TypeScript、Next.jsなどフロントエンドの学習を主に行っています。
             <br />
-            
-            <br />
+            2021年8月に参加している学習コミュニティで、チーム開発を体験し、プロダクトオーナーの知り合いの農家さんに使ってもらってるアプリの一般リリースに向けて新機能実装やリファクタリング、プロジェクトのTypeScript導入に貢献していきました。
           </Text>
           <Spacer />
           {/* <Image src="/profile.png" w={40} h={40} rounded="full" mr="16" /> */}
         </Flex>
+        <Heading my="4" as="h3">
+          Skills
+        </Heading>
+        <SkillTable />
         <Heading my="4" as="h3">
           学習記録
         </Heading>
