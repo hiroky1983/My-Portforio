@@ -45,8 +45,8 @@ const profile = () => {
             <PortfolioCard
               title="Biet-new"
               description="外国人と日本人の交際に関する情報サイトです（製作中）"
-              link="https://github.com/hiroky1983/biet_new"
-              githubLink=""
+              link=""
+              githubLink="https://github.com/hiroky1983/biet_new"
               skills={bietNewSkills}
             />
             <PortfolioCard
