@@ -12,6 +12,12 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
 import { SpSidebar } from "./SpSidebar";
 
+const linkProps = [
+  { id: 1, link: "/", linkName: "HOME" },
+  { id: 2, link: "/profile", linkName: "PROFILE" },
+  { id: 3, link: "/keireki", linkName: "職務経歴書" },
+]
+
 const Sidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<any>();
@@ -62,27 +68,15 @@ const Sidebar = () => {
             fontSize="xl"
             fontWeight="bold"
           >
-            <Stack isInline spacing={8}>
-              <Box mx="auto" mt="8" mb="4">
-                <Link href="/">HOME</Link>
-              </Box>
-            </Stack>
+            {linkProps.map((linkProp) => (
+              <Stack isInline spacing={2}>
+                <Box mx="auto" mt="8" mb="4">
+                  <Link href={linkProp.link}>{linkProp.linkName}</Link>
+                </Box>
+              </Stack>
+            ))
+            }
 
-            <Stack isInline spacing={4}>
-              <Box mx="auto" mb="4">
-                <Link href="/profile">PROFILE</Link>
-              </Box>
-            </Stack>
-            {/* <Stack isInline spacing={4}>
-              <Box mx="auto" mb="4">
-                <Link href="/portfolio">ポートフォリオ</Link>
-              </Box>
-            </Stack>  */}
-            <Stack isInline spacing={4}>
-              <Box mx="auto" mb="4">
-                <Link href="/keireki">職務経歴書</Link>
-              </Box>
-            </Stack>
           </Flex>
         </Flex>
       </Box>
