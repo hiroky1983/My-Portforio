@@ -8,7 +8,6 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/layout";
-import { Th } from "@chakra-ui/react";
 import React from "react";
 import { SkillTable } from "../Skilltable";
 
@@ -58,6 +57,7 @@ const Card = () => {
           <Link href="https://zenn.dev/hirockysan" target="_blank">
             Zenn記事でのアウトプット
           </Link>
+          <img src="https://grass-graph.appspot.com/images/hiroky1983.png" />
         </Stack>
       </Box>
     </Center>
