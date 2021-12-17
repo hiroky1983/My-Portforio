@@ -1,6 +1,8 @@
 import React from "react";
-import { Flex, DrawerCloseButton, Stack } from "@chakra-ui/react";
-import {  Spacer } from "@chakra-ui/react";
+import { Flex, DrawerCloseButton, Stack, Box } from "@chakra-ui/react";
+import { Spacer } from "@chakra-ui/react";
+import { linkProps } from "./Sidebar";
+import Link from "next/link";
 
 export const SpSidebar = () => {
   return (
@@ -14,13 +16,20 @@ export const SpSidebar = () => {
       px={2}
       py={2}
       overflowY="auto"
+      fontSize="xl"
+      fontWeight="bold"
     >
       <DrawerCloseButton />
       <Flex direction="column" flex="1" pt="2" pb="4" overflowY="auto" px="4">
         <Stack spacing="5">
-          <Stack>
-            <Spacer />
-          </Stack>
+          {linkProps.map((linkProp) => (
+            <Stack isInline spacing={2}>
+              <Box mx="auto" mt="8" mb="4">
+                <Link href={linkProp.link}>{linkProp.linkName}</Link>
+              </Box>
+            </Stack>
+          ))
+          }
         </Stack>
       </Flex>
     </Flex>

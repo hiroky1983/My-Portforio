@@ -12,7 +12,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
 import { SpSidebar } from "./SpSidebar";
 
-const linkProps = [
+export const linkProps = [
   { id: 1, link: "/", linkName: "HOME" },
   { id: 2, link: "/profile", linkName: "PROFILE" },
   { id: 3, link: "/keireki", linkName: "職務経歴書" },
