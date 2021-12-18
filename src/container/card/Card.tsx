@@ -11,6 +11,24 @@ import {
 import React from "react";
 import { SkillTable } from "../Skilltable";
 
+const outputLinks = [
+  {
+    id: 1,
+    link: "https://reliable-reptile-87a.notion.site/e50d8912c3274612a01ee2ca59369c68",
+    discription: "Notionで毎日の学習記録",
+  },
+  {
+    id: 2,
+    link: "https://qiita.com/hirock_e1983",
+    discription: "Qiita記事でのアウトプット",
+  },
+  {
+    id: 3,
+    link: "https://zenn.dev/hirockysan",
+    discription: " Zenn記事でのアウトプット",
+  },
+];
+
 const Card = () => {
   const url = "https://github.com/users/hiroky1983/contributions";
 
@@ -45,18 +63,11 @@ const Card = () => {
           学習記録
         </Heading>
         <Stack spacing="4">
-          <Link
-            href="https://reliable-reptile-87a.notion.site/e50d8912c3274612a01ee2ca59369c68"
-            target="_blank"
-          >
-            Notionで毎日の学習記録
-          </Link>
-          <Link href="https://qiita.com/hirock_e1983" target="_blank">
-            Qiita記事でのアウトプット
-          </Link>
-          <Link href="https://zenn.dev/hirockysan" target="_blank">
-            Zenn記事でのアウトプット
-          </Link>
+          {outputLinks.map((link) => (
+            <Link key={link.id} href={link.link} target="_blank">
+              {link.discription}
+            </Link>
+          ))}
           <img src="https://grass-graph.appspot.com/images/hiroky1983.png" />
         </Stack>
       </Box>
