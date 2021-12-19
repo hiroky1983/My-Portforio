@@ -20,8 +20,6 @@ const fetcher = async (url: any) => {
 const profile = () => {
   const { data, error } = useSWR("api/hello", fetcher);
 
-  console.log(data);
-
   return (
     <>
       <Layout>
