@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-} from "@chakra-ui/react";
+import { Table, Thead, Tbody, Tr, Th, Td } from "@chakra-ui/react";
 import { skillsTable } from "../../utils/skills";
 
 export const SkillTable = () => {
@@ -15,7 +8,7 @@ export const SkillTable = () => {
       <Thead>
         <Tr>
           <Th>スキル</Th>
-          <Th>学習内容</Th>
+          <Th textAlign="center">学習内容</Th>
           <Th>期間</Th>
         </Tr>
       </Thead>
