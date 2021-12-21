@@ -1,5 +1,5 @@
 export const skillsTable = [
-  { id: 1, name: "HTML", learn: "", duration: "1年" },
+  { id: 1, name: "HTML", learn: "タグの理解、属性の理解", duration: "1年" },
   {
     id: 2,
     name: "CSS",
