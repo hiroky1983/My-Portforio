@@ -1,6 +1,5 @@
 import React from "react";
 import { Flex, DrawerCloseButton, Stack, Box } from "@chakra-ui/react";
-import { Spacer } from "@chakra-ui/react";
 import { linkProps } from "./Sidebar";
 import Link from "next/link";
 
