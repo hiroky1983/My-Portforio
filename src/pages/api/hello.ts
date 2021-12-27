@@ -9,14 +9,10 @@ export default async function helloAPI(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const a = await octokit.request(
-    "GET /repos/{owner}/{repo}/git/commits/{commit_sha}",
-    {
-      owner: "hiroky1983",
-      repo: "hello-world",
-      commit_sha: "commit_sha",
-    }
-  );
+  const a = await octokit.request("GET /repos/{owner}/{repo}/contributors", {
+    owner: "hiroky1983",
+    repo: "biet-new",
+  });
   console.log(a);
 
   res.status(200).json(a);
