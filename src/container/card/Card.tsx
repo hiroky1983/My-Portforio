@@ -68,6 +68,7 @@ const Card = () => {
               {link.discription}
             </Link>
           ))}
+          <Heading>Github contributions</Heading>
           <img src="https://grass-graph.appspot.com/images/hiroky1983.png" />
         </Stack>
       </Box>
