@@ -8,7 +8,6 @@ import {
   DrawerContent,
   DrawerOverlay,
 } from "@chakra-ui/modal";
-import { HamburgerIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
 import { SpSidebar } from "./SpSidebar";
 
@@ -16,7 +15,7 @@ export const linkProps = [
   { id: 1, link: "/", linkName: "HOME" },
   { id: 2, link: "/profile", linkName: "PROFILE" },
   { id: 3, link: "/keireki", linkName: "職務経歴書" },
-]
+];
 
 const Sidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,9 +26,10 @@ const Sidebar = () => {
       <Box display={{ base: "block", xl: "none" }} zIndex={5} pos="fixed">
         <Button
           ref={btnRef}
+          colorScheme={"teal"}
+          bg="teal"
           onClick={onOpen}
           variant="outline"
-          icon={<HamburgerIcon />}
           ml={3}
           mt={3}
         />
@@ -74,9 +74,7 @@ const Sidebar = () => {
                   <Link href={linkProp.link}>{linkProp.linkName}</Link>
                 </Box>
               </Stack>
-            ))
-            }
-
+            ))}
           </Flex>
         </Flex>
       </Box>
