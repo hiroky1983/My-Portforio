@@ -13,8 +13,7 @@ import { SpSidebar } from "./SpSidebar";
 
 export const linkProps = [
   { id: 1, link: "/", linkName: "HOME" },
-  { id: 2, link: "/profile", linkName: "PROFILE" },
-  { id: 3, link: "/keireki", linkName: "職務経歴書" },
+  { id: 2, link: "/keireki", linkName: "職務経歴書" },
 ];
 
 const Sidebar = () => {
