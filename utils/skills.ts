@@ -83,3 +83,6 @@ export const memberChoosedSkills = [
   { id: 2, name: "CSS" },
   { id: 3, name: "JavaScript" },
 ];
+export const memberChoosedVueSkills = [
+  { id: 1, name: "Vue" },
+];

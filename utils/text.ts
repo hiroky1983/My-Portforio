@@ -6,3 +6,6 @@ export const memberChoosedDiscripton =
   "学習サイトで一緒に学習する人を選ぶ為に作ったメンバー選定アプリ";
 export const memberChoosedProductionStory =
   "制作時間30分で初めて他人にも使ってもらったアプリです（個人名は削除してます）";
+  export const memberChoosedVueDiscripton =
+  "MemberChoosedのアプリを職業訓練校で学んだVueのキャッチアップ用にリファクタリングを行い作成ました。";
+export const memberChoosedVueProductionStory ="前回はコード側でしか抽選対象を増やせなかったですが、今回はフロント側から抽選対処を入力して抽選出来ます。";
