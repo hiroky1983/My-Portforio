@@ -3,6 +3,7 @@ import { VFC } from "react";
 import useSWR from "swr";
 import {
   bietNewSkills,
+  kaiMonoSkills,
   memberChoosedSkills,
   memberChoosedVueSkills,
 } from "../../utils/skills";
@@ -32,7 +33,7 @@ const PortfolioCards = [
   {
     id: 2,
     title: "Member-Choosed",
-    description: { memberChoosedDiscripton },
+    description: memberChoosedDiscripton,
     productionStory: memberChoosedProductionStory,
     link: "https://member-choosed-hiroky1983.vercel.app/",
     githubLink: "https://github.com/hiroky1983/Member-Choosed",
@@ -40,21 +41,21 @@ const PortfolioCards = [
   },
   {
     id: 3,
-    title:"Member-Choosed(vue)",
-    descriptio:memberChoosedVueDiscripton,
-    productionStory:memberChoosedVueProductionStory,
-    link:"https://member-choosed-hiroky1983.vercel.app/",
-    githubLink:"https://github.com/hiroky1983/Member-Choosed",
-    skills:memberChoosedVueSkills,
+    title: "Member-Choosed(vue)",
+    description: memberChoosedVueDiscripton,
+    productionStory: memberChoosedVueProductionStory,
+    link: "https://member-eight.vercel.app/",
+    githubLink: "https://github.com/hiroky1983/member",
+    skills: memberChoosedVueSkills,
   },
   {
     id: 4,
-    title:"kai-mono",
-    descriptio:memberChoosedVueDiscripton,
-    productionStory:memberChoosedVueProductionStory,
-    link:"https://member-choosed-hiroky1983.vercel.app/",
-    githubLink:"https://github.com/hiroky1983/Member-Choosed",
-    skills:memberChoosedVueSkills,
+    title: "kai-mono",
+    description: memberChoosedVueDiscripton,
+    productionStory: memberChoosedVueProductionStory,
+    link: "https://kai-mono-3kgauz1f5-hiroky1983.vercel.app/",
+    githubLink: "https://github.com/hiroky1983/kai-mono",
+    skills: kaiMonoSkills,
   },
 ];
 
@@ -91,30 +92,21 @@ const Home = () => {
             >
               PORTFOLIO
             </Heading>
-            <PortfolioCard
-              title="Biet-new"
-              description={bietNewDiscripton}
-              productionStory={bietNewProductionStory}
-              link="https://biet-news-574ge713j-hiroky1983.vercel.app/"
-              githubLink="https://github.com/hiroky1983/biet_new"
-              skills={bietNewSkills}
-            />
-            <PortfolioCard
-              title="Member-Choosed"
-              description={memberChoosedDiscripton}
-              productionStory={memberChoosedProductionStory}
-              link="https://member-choosed-hiroky1983.vercel.app/"
-              githubLink="https://github.com/hiroky1983/Member-Choosed"
-              skills={memberChoosedSkills}
-            />
-            <PortfolioCard
-              title="Member-Choosed(vue)"
-              description={memberChoosedVueDiscripton}
-              productionStory={memberChoosedVueProductionStory}
-              link="https://member-choosed-hiroky1983.vercel.app/"
-              githubLink="https://github.com/hiroky1983/Member-Choosed"
-              skills={memberChoosedVueSkills}
-            />
+            {
+              PortfolioCards.map((card) => {
+                return (
+                  <PortfolioCard
+                    title={card.title}
+                    description={card.description}
+                    productionStory={card.productionStory}
+                    link={card.link}
+                    githubLink={card.githubLink}
+                    skills={card.skills}
+                  />
+                )
+              })
+            }
+
           </Stack>
           <Stack spacing={8} mt="12">
             <Heading

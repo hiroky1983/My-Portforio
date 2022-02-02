@@ -86,3 +86,13 @@ export const memberChoosedSkills = [
 export const memberChoosedVueSkills = [
   { id: 1, name: "Vue" },
 ];
+
+export const kaiMonoSkills = [
+  { id: 1, name: "React" },
+  { id: 2, name: "Next.js" },
+  { id: 3, name: "TypeScript" },
+  { id: 4, name: "supabase" },
+  { id: 5, name: "SWR" },
+  { id: 6, name: "tailwindcss" },
+  { id: 7, name: "next-pwa" },
+];
