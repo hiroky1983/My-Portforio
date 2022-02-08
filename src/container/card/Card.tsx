@@ -40,6 +40,8 @@ const Card = () => {
         boxShadow="lg"
         bg="white"
         p="8"
+        display="grid"
+        gridGap="4"
         _hover={{ boxShadow: "xl", cursor: "pointer" }}
         transform="auto-gpu"
       >

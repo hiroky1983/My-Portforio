@@ -67,6 +67,12 @@ export const skillsTable = [
     learn: "チーム開発でのTask管理に使用",
     duration: experienceTime(2021, 8),
   },
+  {
+    id: 11,
+    name: "supabase",
+    learn: "kai-monoアプリのバックエンドで使用、基本的な操作はキャッチアップ済み",
+    duration: experienceTime(2022, 1),
+  },
 ];
 
 export const bietNewSkills = [
@@ -95,4 +101,5 @@ export const kaiMonoSkills = [
   { id: 5, name: "SWR" },
   { id: 6, name: "tailwindcss" },
   { id: 7, name: "next-pwa" },
+  { id: 8, name: "Chakra UI" },
 ];

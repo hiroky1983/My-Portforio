@@ -10,6 +10,8 @@ import {
 import {
   bietNewDiscripton,
   bietNewProductionStory,
+  kaiMonoDiscripton,
+  kaiMonoProductionStory,
   memberChoosedDiscripton,
   memberChoosedProductionStory,
   memberChoosedVueDiscripton,
@@ -51,9 +53,9 @@ const PortfolioCards = [
   {
     id: 4,
     title: "kai-mono",
-    description: memberChoosedVueDiscripton,
-    productionStory: memberChoosedVueProductionStory,
-    link: "https://kai-mono-3kgauz1f5-hiroky1983.vercel.app/",
+    description: kaiMonoDiscripton,
+    productionStory: kaiMonoProductionStory,
+    link: "https://kai-mono-8bhe87hzz-hiroky1983.vercel.app/about",
     githubLink: "https://github.com/hiroky1983/kai-mono",
     skills: kaiMonoSkills,
   },
