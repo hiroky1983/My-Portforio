@@ -11,4 +11,4 @@ export const memberChoosedVueDiscripton =
 export const memberChoosedVueProductionStory = "前回はコード側でしか抽選対象を増やせなかったですが、今回はフロント側から抽選対処を入力して抽選出来ます。";
 export const kaiMonoDiscripton =
   "家族との買い物リスト共有アプリです。";
-export const kaiMonoProductionStory = "『買い物をもっと効率的に』をコンセプトに、買い物のリストを家族と共有し買い忘れや勝ったものの重複を防ぐアプリケーションです。";
+export const kaiMonoProductionStory = "『買い物をもっと効率的に』をコンセプトに、買い物のリストを家族と共有し買い忘れや勝ったものの重複を防ぐアプリケーションです。（PWA対応でスマホ使用を想定しているのでdev toolsのshow deviceを有効にして見ていただきたいです。）";
