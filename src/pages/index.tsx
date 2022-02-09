@@ -55,7 +55,7 @@ const PortfolioCards = [
     title: "kai-mono",
     description: kaiMonoDiscripton,
     productionStory: kaiMonoProductionStory,
-    link: "https://kai-mono-8bhe87hzz-hiroky1983.vercel.app/about",
+    link: "https://kai-mono.vercel.app/about",
     githubLink: "https://github.com/hiroky1983/kai-mono",
     skills: kaiMonoSkills,
   },
