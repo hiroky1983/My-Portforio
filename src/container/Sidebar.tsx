@@ -68,7 +68,7 @@ const Sidebar = () => {
             fontWeight="bold"
           >
             {linkProps.map((linkProp) => (
-              <Stack isInline spacing={2}>
+              <Stack isInline spacing={2} key={linkProp.id}>
                 <Box mx="auto" mt="8" mb="4">
                   <Link href={linkProp.link}>{linkProp.linkName}</Link>
                 </Box>

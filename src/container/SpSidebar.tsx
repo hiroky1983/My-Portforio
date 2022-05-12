@@ -22,13 +22,12 @@ export const SpSidebar = () => {
       <Flex direction="column" flex="1" pt="2" pb="4" overflowY="auto" px="4">
         <Stack spacing="5">
           {linkProps.map((linkProp) => (
-            <Stack isInline spacing={2}>
+            <Stack isInline spacing={2} key={linkProp.id}>
               <Box mx="auto" mt="8" mb="4">
                 <Link href={linkProp.link}>{linkProp.linkName}</Link>
               </Box>
             </Stack>
-          ))
-          }
+          ))}
         </Stack>
       </Flex>
     </Flex>

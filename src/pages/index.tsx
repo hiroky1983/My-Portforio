@@ -61,11 +61,20 @@ const PortfolioCards = [
   },
 ];
 
-const fetcher = async (url: any) => {
-  await fetch(url).then((res) => res.json());
+const fetcher = async () => {
+  const res = await fetch("/api/hello", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const data = await res.json();
+  return data;
 };
 
 const Home = () => {
+  console.log(fetcher);
+
   const { data, error } = useSWR("api/hello", fetcher);
 
   return (
@@ -94,21 +103,19 @@ const Home = () => {
             >
               PORTFOLIO
             </Heading>
-            {
-              PortfolioCards.map((card) => {
-                return (
-                  <PortfolioCard
-                    title={card.title}
-                    description={card.description}
-                    productionStory={card.productionStory}
-                    link={card.link}
-                    githubLink={card.githubLink}
-                    skills={card.skills}
-                  />
-                )
-              })
-            }
-
+            {PortfolioCards.map((card) => {
+              return (
+                <PortfolioCard
+                  key={card.id}
+                  title={card.title}
+                  description={card.description}
+                  productionStory={card.productionStory}
+                  link={card.link}
+                  githubLink={card.githubLink}
+                  skills={card.skills}
+                />
+              );
+            })}
           </Stack>
           <Stack spacing={8} mt="12">
             <Heading

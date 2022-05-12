@@ -53,7 +53,7 @@ const PortfolioCard: VFC<Props> = (props) => {
           使用技術
         </Text>
         {skills.map((skill) => (
-          <List spacing={3} px="4">
+          <List spacing={3} px="4" key={skill.id}>
             <ListItem>
               <ListIcon key={skill.id} as={MdCheckCircle} color="teal" />
               {skill.name}
