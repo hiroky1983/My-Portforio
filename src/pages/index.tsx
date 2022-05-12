@@ -29,7 +29,7 @@ const PortfolioCards = [
     description: bietNewDiscripton,
     productionStory: bietNewProductionStory,
     link: "https://biet-news-574ge713j-hiroky1983.vercel.app/",
-    githubLink: "https://github.com/hiroky1983/biet_new",
+    githubLink: "https://biet-news-my3ff0axs-hiroky1983.vercel.app/",
     skills: bietNewSkills,
   },
   {
@@ -55,7 +55,7 @@ const PortfolioCards = [
     title: "kai-mono",
     description: kaiMonoDiscripton,
     productionStory: kaiMonoProductionStory,
-    link: "https://kai-mono-8bhe87hzz-hiroky1983.vercel.app/about",
+    link: "https://kai-mono.vercel.app/about",
     githubLink: "https://github.com/hiroky1983/kai-mono",
     skills: kaiMonoSkills,
   },
