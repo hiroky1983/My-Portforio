@@ -5,6 +5,7 @@ import {
   bietNewSkills,
   kaiMonoSkills,
   k_blogSkills,
+  laravelTodoSkills,
   memberChoosedSkills,
   memberChoosedVueSkills,
 } from "../../utils/skills";
@@ -15,6 +16,8 @@ import {
   kaiMonoProductionStory,
   k_blogDiscripton,
   k_blogProductionStory,
+  laravelTodoDiscripton,
+  laravelTodoProductionStory,
   memberChoosedDiscripton,
   memberChoosedProductionStory,
   memberChoosedVueDiscripton,
@@ -70,6 +73,15 @@ const PortfolioCards = [
     link: "https://k-blog-nine.vercel.app/",
     githubLink: "https://github.com/hiroky1983/khanh-blog",
     skills: k_blogSkills,
+  },
+  {
+    id: 6,
+    title: "LaravelTodo",
+    description: laravelTodoDiscripton,
+    productionStory: laravelTodoProductionStory,
+    link: "",
+    githubLink: "",
+    skills: laravelTodoSkills,
   },
 ];
 

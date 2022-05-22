@@ -117,3 +117,13 @@ export const k_blogSkills = [
   { id: 5, name: "tailwindcss" },
   { id: 6, name: "Mantine" },
 ];
+
+export const laravelTodoSkills = [
+  { id: 1, name: "React" },
+  { id: 2, name: "Next.js" },
+  { id: 3, name: "TypeScript" },
+  { id: 4, name: "tailwindcss" },
+  { id: 5, name: "PHP" },
+  { id: 6, name: "Laravel" },
+  { id: 7, name: "SQLITE" },
+];
