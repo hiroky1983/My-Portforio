@@ -4,6 +4,7 @@ import useSWR from "swr";
 import {
   bietNewSkills,
   kaiMonoSkills,
+  k_blogSkills,
   memberChoosedSkills,
   memberChoosedVueSkills,
 } from "../../utils/skills";
@@ -12,6 +13,8 @@ import {
   bietNewProductionStory,
   kaiMonoDiscripton,
   kaiMonoProductionStory,
+  k_blogDiscripton,
+  k_blogProductionStory,
   memberChoosedDiscripton,
   memberChoosedProductionStory,
   memberChoosedVueDiscripton,
@@ -59,6 +62,15 @@ const PortfolioCards = [
     githubLink: "https://github.com/hiroky1983/kai-mono",
     skills: kaiMonoSkills,
   },
+  {
+    id: 5,
+    title: "k-blog",
+    description: k_blogDiscripton,
+    productionStory: k_blogProductionStory,
+    link: "https://k-blog-nine.vercel.app/",
+    githubLink: "https://github.com/hiroky1983/khanh-blog",
+    skills: k_blogSkills,
+  },
 ];
 
 const fetcher = async () => {
@@ -73,9 +85,9 @@ const fetcher = async () => {
 };
 
 const Home = () => {
-  console.log(fetcher);
+  // console.log(fetcher());
 
-  const { data, error } = useSWR("api/hello", fetcher);
+  // const { data, error } = useSWR("api/hello", fetcher);
 
   return (
     <>

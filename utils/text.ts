@@ -8,7 +8,10 @@ export const memberChoosedProductionStory =
   "制作時間30分で初めて他人にも使ってもらったアプリです（個人名は削除してます）";
 export const memberChoosedVueDiscripton =
   "MemberChoosedのアプリを職業訓練校で学んだVueのキャッチアップ用にリファクタリングを行い作成ました。";
-export const memberChoosedVueProductionStory = "前回はコード側でしか抽選対象を増やせなかったですが、今回はフロント側から抽選対処を入力して抽選出来ます。";
-export const kaiMonoDiscripton =
-  "家族との買い物リスト共有アプリです。";
-export const kaiMonoProductionStory = "『買い物をもっと効率的に』をコンセプトに、買い物のリストを家族と共有し買い忘れや勝ったものの重複を防ぐアプリケーションです。（PWA対応でスマホ使用を想定しているのでdev toolsのshow deviceを有効にして見ていただきたいです。）";
+export const memberChoosedVueProductionStory =
+  "前回はコード側でしか抽選対象を増やせなかったですが、今回はフロント側から抽選対処を入力して抽選出来ます。";
+export const kaiMonoDiscripton = "家族との買い物リスト共有アプリです。";
+export const kaiMonoProductionStory =
+  "『買い物をもっと効率的に』をコンセプトに、買い物のリストを家族と共有し買い忘れや勝ったものの重複を防ぐアプリケーションです。（PWA対応でスマホ使用を想定しているのでdev toolsのshow deviceを有効にして見ていただきたいです。）";
+export const k_blogDiscripton = "MicroCMSとNext.jsを用いたブログです。";
+export const k_blogProductionStory = "MicroCMSとNext.jsを用いたブログです。";

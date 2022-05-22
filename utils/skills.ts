@@ -70,8 +70,15 @@ export const skillsTable = [
   {
     id: 11,
     name: "supabase",
-    learn: "kai-monoアプリのバックエンドで使用、基本的な操作はキャッチアップ済み",
+    learn:
+      "kai-monoアプリのバックエンドで使用、基本的な操作はキャッチアップ済み",
     duration: experienceTime(2022, 1),
+  },
+  {
+    id: 12,
+    name: "PHP",
+    learn: "Laravelを用いたバックエンドの実装などを学習中",
+    duration: experienceTime(2022, 4),
   },
 ];
 
@@ -89,9 +96,7 @@ export const memberChoosedSkills = [
   { id: 2, name: "CSS" },
   { id: 3, name: "JavaScript" },
 ];
-export const memberChoosedVueSkills = [
-  { id: 1, name: "Vue" },
-];
+export const memberChoosedVueSkills = [{ id: 1, name: "Vue" }];
 
 export const kaiMonoSkills = [
   { id: 1, name: "React" },
@@ -102,4 +107,13 @@ export const kaiMonoSkills = [
   { id: 6, name: "tailwindcss" },
   { id: 7, name: "next-pwa" },
   { id: 8, name: "Chakra UI" },
+];
+
+export const k_blogSkills = [
+  { id: 1, name: "React" },
+  { id: 2, name: "Next.js" },
+  { id: 3, name: "TypeScript" },
+  { id: 4, name: "MicroCMS" },
+  { id: 5, name: "tailwindcss" },
+  { id: 6, name: "Mantine" },
 ];

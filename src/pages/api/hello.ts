@@ -2,18 +2,22 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Octokit, App } from "octokit";
 
-const octokit = new Octokit();
-const token = process.env.NEXT_PUBLIC_TOKEN;
+const octokit = new Octokit({
+  auth: process.env.NEXT_PUBLIC_TOKEN,
+});
+// const token = process.env.NEXT_PUBLIC_TOKEN;
 
 export default async function helloAPI(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const a = await octokit.request("GET /repos/{owner}/{repo}/contributors", {
-    owner: "hiroky1983",
-    repo: "biet-new",
-  });
-  console.log(a);
-
-  res.status(200).json(a);
+  const {
+    data: { login },
+  } = await octokit.rest.users.getAuthenticated();
+  console.log("Hello, %s", login);
+  // const resp = await octokit.rest.repos.getContent({
+  //   owner: "hiroky1983",
+  //   repo: "biet-new",
+  //   path: "README.md",
+  // });
 }
