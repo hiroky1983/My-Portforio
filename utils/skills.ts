@@ -77,8 +77,14 @@ export const skillsTable = [
   {
     id: 12,
     name: "PHP",
-    learn: "Laravelを用いたバックエンドの実装などを学習中",
+    learn: "Laravelを用いたバックエンドの実装などを実務でやってます",
     duration: experienceTime(2022, 4),
+  },
+  {
+    id: 13,
+    name: "Go",
+    learn: "Goを用いたバックエンドの実装などを実務でやってます",
+    duration: experienceTime(2022, 9),
   },
 ];
 

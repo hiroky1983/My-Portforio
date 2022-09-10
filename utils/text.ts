@@ -15,6 +15,6 @@ export const kaiMonoProductionStory =
   "『買い物をもっと効率的に』をコンセプトに、買い物のリストを家族と共有し買い忘れや勝ったものの重複を防ぐアプリケーションです。（PWA対応でスマホ使用を想定しているのでdev toolsのshow deviceを有効にして見ていただきたいです。）";
 export const k_blogDiscripton = "MicroCMSとNext.jsを用いたブログです。";
 export const k_blogProductionStory = "MicroCMSとNext.jsを用いたブログです。";
-export const laravelTodoDiscripton = "LaravelとVueを用いたTodoアプリです。";
+export const laravelTodoDiscripton = "LaravelとNext.jsを用いたTodoアプリです。";
 export const laravelTodoProductionStory =
-  "LaravelとVueを用いたTodoアプリです。";
+  "LaravelとNext.jsを用いたTodoアプリです。";
